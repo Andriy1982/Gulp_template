@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+@@include('html/head.html', {
+    "title": "Main page"
+})
 <body>
-    
+    @@include('html/header.html')
+    <main>
+        <img src="@img/nature.jpeg" alt="nature">
+    </main>
+    @@include('html/footer.html')
 </body>
 </html>
