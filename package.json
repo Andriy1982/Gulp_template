@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/Andriy1982/Gulp_template#readme",
   "devDependencies": {
+    "del": "^7.0.0",
     "gulp": "^4.0.2"
   }
 }
