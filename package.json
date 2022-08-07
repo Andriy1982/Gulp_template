@@ -1,0 +1,22 @@
+{
+  "name": "gulp_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andriy1982/Gulp_template.git"
+  },
+  "author": "Andrii Krychkivskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andriy1982/Gulp_template/issues"
+  },
+  "homepage": "https://github.com/Andriy1982/Gulp_template#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
