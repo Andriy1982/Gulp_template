@@ -1,3 +1,19 @@
 body {
     background-color: tomato;
+    h1 {
+        color:aqua
+    }
+    @media (max-width: 768px) {
+        font-style: italic;
+    }
+
+    background: url("@img/nature.jpeg") 0 0 no-repeat;
 }
+
+h1 {
+    color:aqua;
+    @media (max-width: 768px) {
+       font-size: 20px;
+}
+}
+

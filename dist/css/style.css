@@ -1,0 +1,26 @@
+.no-webp body {
+  background: url("../img/nature.jpeg") 0 0 no-repeat; }
+
+body {
+  background-color: tomato;
+}
+
+body h1 {
+  color: aqua;
+}
+
+h1 {
+  color: aqua;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-style: italic;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.webp body { background: url(../img/nature.webp) 0 0 no-repeat; }

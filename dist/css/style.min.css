@@ -1,3 +1,1 @@
-body {
-  background-color: tomato;
-}
+.no-webp body{background:url(../img/nature.jpeg) 0 0 no-repeat}body{background-color:tomato}body h1{color:#0ff}h1{color:#0ff}@media (max-width:768px){body{font-style:italic}h1{font-size:20px}}.webp body{background:url(../img/nature.webp) 0 0 no-repeat}
