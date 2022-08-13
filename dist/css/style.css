@@ -1,12 +1,28 @@
+@font-face {
+  font-family: roboto;
+  font-display: swap;
+  src: url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+header {
+  background-color: aqua;
+  color: gray;
+}
+
 .no-webp body {
   background: url("../img/nature.jpeg") 0 0 no-repeat; }
 
 body {
+  font-family: roboto;
   background-color: tomato;
 }
 
 body h1 {
   color: aqua;
+  font-weight: 700;
+  color: azure;
 }
 
 h1 {

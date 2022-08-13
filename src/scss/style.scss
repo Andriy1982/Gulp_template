@@ -1,7 +1,14 @@
+@import "fonts";
+@import "header";
+
 body {
+    font-family: roboto;
+    
     background-color: tomato;
     h1 {
-        color:aqua
+        color:aqua;
+        font-weight: 700;
+        color: azure;
     }
     @media (max-width: 768px) {
         font-style: italic;

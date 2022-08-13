@@ -10,8 +10,12 @@ import {server} from './gulp/tasks/server.js';
 import {scss} from './gulp/tasks/scss.js';
 import {js} from './gulp/tasks/js.js';
 import {images} from './gulp/tasks/images.js';
+import {fontsStyle, otfToTtf,ttfToWoff} from './gulp/tasks/fonts.js';
+import {svgSprive} from './gulp/tasks/svgSprive.js';
 
-const mainTasks = gulp.parallel(copy, html, scss, js, images);
+const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
+
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 
@@ -20,6 +24,8 @@ global.app = {
     gulp,
     plugins
 }
+
+export {svgSprive};
 
 function watcher() {
     gulp.watch(path.watch.files, copy)
@@ -30,10 +36,4 @@ function watcher() {
 }
 
 gulp.task('default', dev);
-// function defaultTask(cb) {
-//     // place code for your default task here
-//     cb();
-//     console.log(path)
-//   }
-  
-//   exports.default = defaultTask
+

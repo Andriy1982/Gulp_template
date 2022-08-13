@@ -15,18 +15,19 @@ const srcFolder = './src';
     },
     src: {
         js: `${srcFolder}/js/app.js`,
-        images: `${srcFolder}/img/**/*.{jpg,ipeg,png,gif,webp}`,
+        images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
         svg: `${srcFolder}/img/**/*.svg`,
-        scss: `${srcFolder}/scss/**/*.scss`,
+        scss: `${srcFolder}/scss/style.scss`,
         html: `${srcFolder}/*.html`,
         files: `${srcFolder}/files/**/*.*`,
+        svgicons: `${srcFolder}/svgicons/*.svg`
     },
     watch: {
         js: `${srcFolder}/**/*.js`,
-        scss: `${srcFolder}/scss/style.scss`,
+        scss: `${srcFolder}/scss/**/*.scss`,
         html: `${srcFolder}/**/*.html`,
         files: `${srcFolder}/files/**/*.*`,
-        images: `${srcFolder}/img/**/*.{jpg,ipeg,png,gif,webp,svg}`,
+        images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg}`,
     },
     clean: buildFolder,
     buildFolder: buildFolder,
