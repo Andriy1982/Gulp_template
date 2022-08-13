@@ -1,16 +1,14 @@
-// import { web } from "webpack";
-
 export function isWebp() {
     function testWebP(callback) {
-        let webP = new Image();
+        var webP = new Image();
         webP.onload = webP.onerror = function () {
             callback(webP.height == 2);
         };
-        webP.src = 'http://www.gstatic.com/webp/gallery/1.webp';
-        console.log(webP.onload)
-        console.log(webP.height )
-    }
+        webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+    };
+
     testWebP(function(support) {
+        console.log(support)
         let classNamme = support === true ?  'webp' : "no-webp";
         document.documentElement.classList.add(classNamme);
     })

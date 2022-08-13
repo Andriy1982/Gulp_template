@@ -5,38 +5,32 @@
   font-weight: 700;
   font-style: normal;
 }
-
 header {
   background-color: aqua;
   color: gray;
 }
 
-.no-webp body {
-  background: url("../img/nature.jpeg") 0 0 no-repeat; }
-
 body {
   font-family: roboto;
   background-color: tomato;
+  background: url("../img/nature.jpeg") 0 0 no-repeat;
 }
-
 body h1 {
   color: aqua;
   font-weight: 700;
   color: azure;
 }
-
-h1 {
-  color: aqua;
-}
-
 @media (max-width: 768px) {
   body {
     font-style: italic;
   }
+}
 
+h1 {
+  color: aqua;
+}
+@media (max-width: 768px) {
   h1 {
     font-size: 20px;
   }
 }
-
-.webp body { background: url(../img/nature.webp) 0 0 no-repeat; }
