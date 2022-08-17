@@ -1,26 +1,5 @@
+@import "normalize";
 @import "fonts";
 @import "header";
-
-body {
-    font-family: roboto;
-    
-    background-color: tomato;
-    h1 {
-        color:aqua;
-        font-weight: 700;
-        color: azure;
-    }
-    @media (max-width: 768px) {
-        font-style: italic;
-    }
-
-    background: url("@img/nature.jpeg") 0 0 no-repeat;
-}
-
-h1 {
-    color:aqua;
-    @media (max-width: 768px) {
-       font-size: 20px;
-}
-}
+@import "footer";
 

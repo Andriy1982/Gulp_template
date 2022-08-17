@@ -8,7 +8,6 @@ export function isWebp() {
     };
 
     testWebP(function(support) {
-        console.log(support)
         let classNamme = support === true ?  'webp' : "no-webp";
         document.documentElement.classList.add(classNamme);
     })

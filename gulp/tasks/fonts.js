@@ -31,11 +31,14 @@ export const ttfWoff = () => {
     .pipe(app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`))
     .pipe(ttf2woff2())
     .pipe(app.gulp.dest(app.path.build.fonts))
+    .pipe(app.gulp.src(`${app.path.srcFolder}/fonts/*.woff`))
+    .pipe(app.gulp.dest(app.path.build.fonts))
+    .pipe(app.gulp.src(`${app.path.srcFolder}/fonts/*.woff2`))
+    .pipe(app.gulp.dest(app.path.build.fonts))
 }
 
 export const fontsStyle = () => {
     let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
-
     fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
         if (fontsFiles) {
             if (!fs.existsSync(fontsFile)) {
